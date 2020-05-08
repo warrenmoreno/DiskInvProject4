@@ -8,6 +8,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 
+using Microsoft.AspNet.Identity.EntityFramework;
+using System.Linq;
+
 namespace DiskInvBk03Project02
 {
     public partial class SiteMaster : MasterPage

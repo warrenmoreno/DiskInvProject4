@@ -1,10 +1,10 @@
-﻿<%-- *************************** ASP Flower Box ******************************** --%>
+﻿<%-- *************************************************************************** --%>
 <%-- Date	        Name	   Description                                       --%>
+<%-- --------------------------------------------------------------------------- --%>
 <%-- 04/26/2020     Warren     Inital implementation of Disks entry.             --%>
 <%-- 05/01/2020     Warren     Added ListView to add, upd, & del Disks.          --%>
 <%--                                                                             --%>
 <%-- *************************************************************************** --%>
-
 <%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" 
     CodeBehind="Disks.aspx.cs" Inherits="DiskInvBk03Project02.Disks" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
