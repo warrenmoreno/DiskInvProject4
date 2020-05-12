@@ -2,6 +2,7 @@
 <%-- Date	        Name	   Description                                       --%>
 <%-- 04/26/2020     Warren     Inital implementation of Borrowers entry          --%>
 <%-- 05/01/2020     Warren     Added ListView to add, upd, & del Borrowers.      --%>
+<%-- 05/11/2020     Warren     Modified ListView template and name               --%>
 <%--                                                                             --%>
 <%-- *************************************************************************** --%>
 
@@ -11,12 +12,12 @@
     <p>
         <br />
         </p>
-    <p>
+    <p style="color:red; font-style:italic; font-size:large;" >
         Borrower</p>
     <p>
         <asp:ListView ID="ListView1" runat="server" DataKeyNames="BorrowerID" DataSourceID="SqlDataSource1" InsertItemPosition="LastItem">
             <AlternatingItemTemplate>
-                <tr style="background-color: #FFFFFF;color: #284775;">
+                <tr style="background-color: #FFF8DC;">
                     <td>
                         <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
                         <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
@@ -36,7 +37,7 @@
                 </tr>
             </AlternatingItemTemplate>
             <EditItemTemplate>
-                <tr style="background-color: #999999;">
+                <tr style="background-color: #008A8C; color: #333333;">
                     <td>
                         <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" ValidationGroup="Edit" />
                         <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
@@ -81,14 +82,14 @@
                     <td>&nbsp;</td>
                     <td>
                         <asp:TextBox ID="FirNameTextBox" runat="server" Text='<%# Bind("FirName") %>' />
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                                         ControlToValidate="FirNameTextBox" ErrorMessage="</br> Required" 
                                         InitialValue="" Display="Dynamic" ValidationGroup="Insert">
                             </asp:RequiredFieldValidator>
                     </td>
                     <td>
                         <asp:TextBox ID="LasNameTextBox" runat="server" Text='<%# Bind("LasName") %>' />
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server"  ControlToValidate="LasNameTextBox" 
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server"  ControlToValidate="LasNameTextBox" 
                                 ErrorMessage="</br> Required" Display="Dynamic"  ValidationGroup="Insert">
                             </asp:RequiredFieldValidator>
                     </td>
@@ -101,7 +102,7 @@
                 </tr>
             </InsertItemTemplate>
             <ItemTemplate>
-                <tr style="background-color: #E0FFFF;color: #333333;">
+                <tr style="background-color: #DCDCDC; color: #333333;">
                     <td>
                         <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
                         <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
@@ -125,7 +126,7 @@
                     <tr runat="server">
                         <td runat="server">
                             <table id="itemPlaceholderContainer" runat="server" border="1" style="background-color: #FFFFFF;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
-                                <tr runat="server" style="background-color: #E0FFFF;color: #333333;">
+                                <tr runat="server" style="background-color: #DCDCDC; color: #333333;">
                                     <th runat="server"></th>
                                     <th runat="server">BorrowerID</th>
                                     <th runat="server">FirName</th>
@@ -138,7 +139,7 @@
                         </td>
                     </tr>
                     <tr runat="server">
-                        <td runat="server" style="text-align: center;background-color: #5D7B9D;font-family: Verdana, Arial, Helvetica, sans-serif;color: #333333">
+                        <td runat="server" style="text-align: center;background-color: #CCCCCC; font-family: Verdana, Arial, Helvetica, sans-serif;color: #333333">
                             <asp:DataPager ID="DataPager1" runat="server">
                                 <Fields>
                                     <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True" />
@@ -149,7 +150,7 @@
                 </table>
             </LayoutTemplate>
             <SelectedItemTemplate>
-                <tr style="background-color: #E2DED6;font-weight: bold;color: #333333;">
+                <tr style="background-color: #008A8C; font-weight: bold;color: #333333;">
                     <td>
                         <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
                         <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />

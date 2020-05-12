@@ -8,10 +8,12 @@
 <%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" 
     CodeBehind="Disks.aspx.cs" Inherits="DiskInvBk03Project02.Disks" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <p>
-    &nbsp;</p>
+    <p style="color:red; font-style:italic; font-size:large;" >
+        <br/>    
+        Disks
+    </p>
 <p>
-    Disks<asp:ListView ID="ListView1" runat="server" DataKeyNames="DiskID" DataSourceID="SqlDataSource1" InsertItemPosition="LastItem">
+    <asp:ListView ID="ListView1" runat="server" DataKeyNames="DiskID" DataSourceID="SqlDataSource1" InsertItemPosition="LastItem">
         <AlternatingItemTemplate>
             <tr style="background-color:#FFF8DC;">
                 <td>

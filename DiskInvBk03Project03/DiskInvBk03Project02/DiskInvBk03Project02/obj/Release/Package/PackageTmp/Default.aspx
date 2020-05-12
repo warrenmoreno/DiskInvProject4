@@ -10,7 +10,7 @@
 
     <div class="jumbotron" style="background-image: url(images/login_screen.png); background-size: cover;">
         <h1 style="color:red; font-style:italic;">
-            Welcome to the home page for WM Disk Inventory
+            Welcome to WM Disk Inventory.
         </h1>
         
     </div>

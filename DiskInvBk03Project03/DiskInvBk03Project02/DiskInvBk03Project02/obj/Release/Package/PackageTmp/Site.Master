@@ -1,4 +1,10 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DiskInvBk03Project02.SiteMaster" %>
+﻿<%-- *************************** ASP Flower Box ******************************** --%>
+<%-- Date	        Name	   Description                                       --%>
+<%-- 05/11/2020     Warren     Background image added for body                   --%>
+<%--                                                                             --%>
+<%-- *************************************************************************** --%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DiskInvBk03Project02.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -15,7 +21,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body>
+<body style="background-image: url(images/parchement_back.png); background-size: contain;" >
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -45,7 +51,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">My Disk Inventory</a>
+                    <a class="navbar-brand" runat="server" href="~/">WM Disk Inventory</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -57,7 +63,7 @@
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
+                                <li><a runat="server" href="~/Account/Register">Create Account</a></li>
                                 <li><a runat="server" href="~/Account/Login">Log in</a></li>
                             </ul>
                         </AnonymousTemplate>
@@ -74,10 +80,10 @@
             </div>
         </div>
         <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" >
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
+            <footer style="color:red; font-style:italic;" >
                 <p>&copy; <%: DateTime.Now.Year %> - WM Disk Inventory Application</p>
             </footer>
         </div>
