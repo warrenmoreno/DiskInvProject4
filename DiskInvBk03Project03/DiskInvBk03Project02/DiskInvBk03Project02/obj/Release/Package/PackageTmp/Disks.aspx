@@ -12,6 +12,13 @@
         <br/>    
         Disks
     </p>
+    <p style="color:black; font-style:italic; font-size:large;" >
+        <asp:Label ID="StatusID" runat="server" Text="Label">Status ID Term: 1 = OUT 2 = IN</asp:Label><br />
+        <asp:Label ID="GenreID" runat="server" Text="Label">Genre ID Term: 1 = Rock || 2 = Country || 3 = Classical || 4 = Heavy Metal </asp:Label><br />
+        <asp:Label ID="DiskType" runat="server" Text="Label">Disk Type ID: 1 = CD-ROM || 2 = DVD-ROM</asp:Label>
+
+        </p>
+    <hr />
 <p>
     <asp:ListView ID="ListView1" runat="server" DataKeyNames="DiskID" DataSourceID="SqlDataSource1" InsertItemPosition="LastItem">
         <AlternatingItemTemplate>
@@ -215,5 +222,6 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 </p>
-
+    <p>
+        &nbsp;</p>
 </asp:Content>

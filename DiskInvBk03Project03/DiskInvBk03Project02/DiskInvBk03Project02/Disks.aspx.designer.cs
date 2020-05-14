@@ -15,6 +15,33 @@ namespace DiskInvBk03Project02
     {
 
         /// <summary>
+        /// StatusID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label StatusID;
+
+        /// <summary>
+        /// GenreID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label GenreID;
+
+        /// <summary>
+        /// DiskType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DiskType;
+
+        /// <summary>
         /// ListView1 control.
         /// </summary>
         /// <remarks>
